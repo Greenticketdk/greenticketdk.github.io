@@ -56,27 +56,28 @@
       <span>07 June 2014</span>
     </div>
     <div class="content">
-      <h1 id='greenticketjssdk'>Greenticket-JS-SDK</h1>
+      
+<h1 id="greenticket-js-sdk">Greenticket-JS-SDK</h1>
 
 <p>Javascript SDK for the Greenticket Semi Closed API</p>
 
-<h2 id='introduktion'>Introduktion</h2>
+<h2 id="introduktion">Introduktion</h2>
+<p>For at bruge Greenticket’s Javascript integration skal du først have oprettet en App hos Greenticket. Dette gøres ved at kontakte apps@greenticket.dk.
+Ved oprettelse får du leveret et App ID samt en Secret. Gem dem et sikkert sted, de skal bruges når du bruger SDK’et.</p>
 
-<p>For at bruge Greenticket’s Javascript integration skal du først have oprettet en App hos Greenticket. Dette gøres ved at kontakte apps@greenticket.dk. Ved oprettelse får du leveret et App ID samt en Secret. Gem dem et sikkert sted, de skal bruges når du bruger SDK’et.</p>
-
-<h2 id='load_javascript_sdk'>Load Javascript SDK</h2>
-
-<p>Start med at inkludere den seneste implementation af Greenticket’s Javascript SDK i bunden af dit “body” tag (Du kan også vælge at hente SDK&#8217;et ned til din server ved at trykke på &#8220;Download Zip&#8221; her på siden):</p>
+<h2 id="load-javascript-sdk">Load Javascript SDK</h2>
+<p>Start med at inkludere den seneste implementation af Greenticket’s Javascript SDK i bunden af dit “body” tag (Du kan også vælge at hente SDK’et ned til din server ved at trykke på “Download Zip” her på siden):</p>
 
 <p><code>HTML
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://s3-eu-west-1.amazonaws.com/greenticket-dk/code/js/GT-latest.api.min.js&quot;&gt;&lt;/script&gt;
-</code> Der er ikke brug for at hente andre libraries eller toolkits for at GT-Api virker.</p>
+&lt;script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/greenticket-dk/code/js/GT-latest.api.min.js"&gt;&lt;/script&gt;
+</code>
+Der er ikke brug for at hente andre libraries eller toolkits for at GT-Api virker.</p>
 
-<h2 id='initialiser_gtapi'>Initialiser GT-Api</h2>
-
-<p>Efter du har inkluderet GT-Api skal du initialisere api’en: <code>HTML
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://s3-eu-west-1.amazonaws.com/greenticket-dk/code/js/GT-latest.api.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
+<h2 id="initialiser-gt-api">Initialiser GT-Api</h2>
+<p>Efter du har inkluderet GT-Api skal du initialisere api’en:
+<code>HTML
+&lt;script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/greenticket-dk/code/js/GT-latest.api.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
   GT.init({
     app_id: DIT_APP_ID,
     secret: DIN_SECRET
@@ -86,12 +87,11 @@
 
 <p>Dette gør GT-Api klar til at bruges og informerer dig hvis din app ikke kunne identificeres.</p>
 
-<h2 id='kald_greentickets_api'>Kald Greenticket’s API</h2>
-
+<h2 id="kald-greentickets-api">Kald Greenticket’s API</h2>
 <p>Efter du har initialiseret GT-Api kan du kalde vores åbne api med functionen GT.api:</p>
 
 <p><code>Javascript
-  GT.api(&#39;REQUEST_URL&#39;, &#39;METODE&#39;, function(response){
+  GT.api('REQUEST_URL', 'METODE', function(response){
      //TODO Handle response
   });
 </code></p>
@@ -99,16 +99,14 @@
 <p>Hvor:</p>
 
 <ul>
-<li>REQUEST_URL er den URL efter https://www.greenticket.dk/api, du vil at kalde.</li>
-
-<li>METODE er den metode du vil bruge til kaldet (GET, POST, PUT, DELETE)</li>
-
-<li>function(response) er den function der bliver kaldt, når din request er blevet udført, her kan du håndtere svaret fra Greenticket’s api.</li>
+  <li>REQUEST_URL er den URL efter https://www.greenticket.dk/api, du vil at kalde.</li>
+  <li>METODE er den metode du vil bruge til kaldet (GET, POST, PUT, DELETE)</li>
+  <li>function(response) er den function der bliver kaldt, når din request er blevet udført, her kan du håndtere svaret fra Greenticket’s api.</li>
 </ul>
 
-<h2 id='greenticket_queries'>Greenticket queries</h2>
-
+<h2 id="greenticket-queries">Greenticket queries</h2>
 <p>De queries du kan kalde på Greenticket’s API kan findes på http://docs.greenticketdk.apiary.io (Ikke komplet). Din mulighed for at kalde de forskellige vil variere alt efter hvad Greenticket har givet dig adgang til.</p>
+
     </div>
 </div>
 
