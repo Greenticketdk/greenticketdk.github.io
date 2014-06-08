@@ -1,4 +1,5 @@
 ---
+title: Javascript SDK
 layout: post
 category : Projects
 description : En javascript helper til vores api. Den håndterer authentication og ajax kald til api'en.

@@ -5,13 +5,13 @@
         <description>Greenticket - Greenticket</description>
         <link>http://greenticketdk.github.io</link>
         <link>http://greenticketdk.github.io</link>
-        <lastBuildDate>2014-06-08T15:23:47+02:00</lastBuildDate>
-        <pubDate>2014-06-08T15:23:47+02:00</pubDate>
+        <lastBuildDate>2014-06-08T15:29:41+02:00</lastBuildDate>
+        <pubDate>2014-06-08T15:29:41+02:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Javascript Sdk</title>
+                <title>Javascript SDK</title>
                 <description>&lt;h1 id=&#39;greenticketjssdk&#39;&gt;Greenticket-JS-SDK&lt;/h1&gt;
 
 &lt;p&gt;Javascript SDK for the Greenticket Semi Closed API&lt;/p&gt;
