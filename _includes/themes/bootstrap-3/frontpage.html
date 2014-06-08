@@ -1,0 +1,21 @@
+<div class="page-header">
+  <span class="navbar-brand"><img class="logo" src="/res/img/logo.png" alt="Greenticket logo"/></span><h1>  {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1><small class="text-muted">{{ page.description }}</span>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+	<ul class="media-list">
+		{% for post in site.posts %}
+		    <li class="media">
+		    	<a class="pull-left" href="{{ post.githubURL }}" target="_blank">
+		    		<img class="media-object" src="{{ post.logo }}" alt="javascript logo">
+		      	</a>
+		    	<div class="media-body">
+		      		<h4 class="media-heading"><a href="{{ post.githubURL }}" target="_blank">{{ post.title }}</a></h4>
+		      		{{ post.description }}
+		    	</div>
+		    </li>
+	  	{% endfor %}
+	</ul>
+  </div>
+</div>

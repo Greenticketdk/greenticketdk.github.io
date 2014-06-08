@@ -1,0 +1,13 @@
+<div class="page-header">
+  <span class="navbar-brand"><img class="logo" src="/res/img/logo.png" alt="Greenticket logo"/></span><h1>  {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span>{{ page.date | date_to_long_string }}</span>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
+</div>
