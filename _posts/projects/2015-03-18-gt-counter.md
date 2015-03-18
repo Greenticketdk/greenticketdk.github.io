@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 category: Projects
 description: "Simple countdown clock, built on HTML5 canvas, that currently can handle up to 59 minutes and 59 seconds."
