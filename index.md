@@ -2,6 +2,6 @@
 layout: frontpage
 title: Greenticket
 tagline: ♥ Open Source
-description: En samling af Greentickets open source projekter.
+description: A collection of Greenticket's open source projects.
 ---
 {% include JB/setup %}
